@@ -13,7 +13,8 @@ for line in f:
     primeira = False
     continue
   lista = line.strip().split(';')
-  if len(lista) > 4:  # Check if list has at least 5 elements (index 4)
+  if len(lista) > 4:  
+    # Check if list has at least 5 elements (index 4)
     if antiga == '' or antiga > lista[4]:
       antiga = lista[4]
   if len(lista) > 14 and (lista[13].strip() == '' or lista[14].strip() == ''):
