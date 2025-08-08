@@ -1,3 +1,6 @@
+class Signs:
+  pass
+
 # Abrir biblioteca e organizar dados
 f = open("sinalizacao.csv")
 
