@@ -1,7 +1,13 @@
 class Signs:
-  pass
-
-# Abrir biblioteca e organizar dados
+  def __init__(self, id, tipo, descricao, latitude, longitude, data):
+    self.id = id
+    self.tipo = tipo
+    self.descricao = descricao
+    self.latitude = latitude
+    self.longitude = longitude
+    self.data = data
+  
+# Open library to read csv file
 f = open("sinalizacao.csv")
 
 
@@ -23,10 +29,10 @@ for line in f:
   else:
     print(lista)
     
-# Mostrar dados
+# Show data
 
 print(antiga)
 print(ausentes)
 
-# Repositório criado para armazenar o código
+
 
